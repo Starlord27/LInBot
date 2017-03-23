@@ -86,7 +86,7 @@ def StartBrowser(browserChoice):
     print 'Signing in...'
     time.sleep(3)
 
-    soup = BeautifulSoup(browser.page_source)
+    soup = BeautifulSoup(browser.page_source, "html.parser")
     if soup.find('div', {'class':'alert error'}):
         print 'Error! Please verify your username and password.'
         browser.quit()
@@ -122,13 +122,13 @@ def LInBot(browser):
                     visitedUsersFile.write(str(profileID)+'\r\n')
                 visitedUsersFile.close()
                             
-                if GetNewProfilesID(BeautifulSoup(browser.page_source), profilesQueued):
+                if GetNewProfilesID(BeautifulSoup(browser.page_source, "html.parser"), profilesQueued):
                     break
                 else:
                     print '|',
                     time.sleep(random.uniform(5, 7))
 
-            soup = BeautifulSoup(browser.page_source)
+            soup = BeautifulSoup(browser.page_source, "html.parser")
             profilesQueued = GetNewProfilesID(soup, profilesQueued)
             V += 1
             print '\n\nFinally found one !\n'
@@ -145,7 +145,7 @@ def LInBot(browser):
                 visitedUsersFile.close()
 
                 # Get new profiles ID
-                soup = BeautifulSoup(browser.page_source)
+                soup = BeautifulSoup(browser.page_source, "html.parser")
                 profilesQueued.extend(GetNewProfilesID(soup, profilesQueued))
 
                 browserTitle = (browser.title).encode('ascii', 'ignore').replace('  ',' ')
