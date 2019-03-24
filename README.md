@@ -1,59 +1,77 @@
-# LInBot
-Increase your popularity on LinkedIn and rank #1 among your network.
-## About
-In May 2014 LinkedIn introduced a new feature, [How You Rank](https://www.linkedin.com/wvmx/profile/rankings), which will show the most-viewed profiles among one's company and greater network.
-
-This bot will allow you to rank #1 by visiting thousands of profiles, who will visit you in return (around 2.5% of them according to my tests).
-## Requirements
-**Important:** make sure that you have your [Profile Viewing Setting](https://www.linkedin.com/settings/?trk=nav_account_sub_nav_settings) changed from 'Anonymous' to  'Public' so LinkedIn members can see that you have visited them and can visit your profile in return.
-You also must change your language setting to **English**.
-
-LInBot was developed under [Pyhton 2.7](https://www.python.org/downloads).
-
-Before you can run the bot, you will need to install a few Python dependencies.
-
-Note: Python 2.7.9 and later (on the python2 series), and Python 3.4 and later include pip by default, so you may have pip already. Otherwise, you can install [easy_install](https://pythonhosted.org/setuptools/easy_install.html) `sudo apt-get install python-setuptools` to install [pip](https://pypi.python.org/pypi/pip) `sudo easy_install pip`.
-
-- [BeautifulSoup4](https://pypi.python.org/pypi/beautifulsoup4), for parsing html: `pip install BeautifulSoup4`
-- [Selenium](http://www.seleniumhq.org/), for browser automation: `pip install Selenium`
-
-If you plan to use Firefox (or Iceweasel) you don't need anything more.
-
-For Chrome, first get the [webdriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) then put it in the same folder than the bot if you are on Windows, or in the `/usr/bin` folder if you are on OS X.
-
-PhantomJS:
-- On Windows, download the binary from the [official website](http://phantomjs.org) and put it in the same folder than the bot.
-- On OS X Yosemite, the binary provided by the PhantomJS crew doesn't work (*selenium.common.exceptions.WebDriverException: Message: 'Can not connect to GhostDriver'*). You can either compile it by yourself or download the binary provided by the awesome [eugene1g](https://github.com/eugene1g/phantomjs/releases). Then put it in the `/usr/bin` folder.
-- It's the same for Raspbian : compile it and put it in the `/usr/bin` folder or download the binary provided by the awesome [spfaffly](https://github.com/spfaffly/phantomjs-linux-armv6l).
-
-If you want to built your own binaries, here is the [build instructions](http://phantomjs.org/build.html) for PhantomJS.
-
-## Configuration
-Before you run the bot, edit the `config` file to add your account login informations (email and password). It's that simple!
-
-## Run
-Once you have installed the required dependencies and edited the `config` file, you can run the bot.
-
-Make sure you are in the correct folder and run the following command: `python LInBot.py`
-On Windows you can usually just double-click `bot.py` to start the bot, as long as you have Python installed correctly.
-
-Then, after choosing your favorite browser (for better performances, the *light* versions disable the loading of javascript, css and images), the bot will start visiting profiles.
-
-## Screenshots
-The bot on my Raspberry Pi 2 B.
-
-![linbot-screenshot-rpi-launch](https://cloud.githubusercontent.com/assets/12429123/7870172/b588b7f0-0587-11e5-91f3-a5c067b9454d.jpg)
-
-![linbot-screenshot-rpi-2](https://cloud.githubusercontent.com/assets/12429123/8115735/af5fdd62-107d-11e5-87c4-f14fba1ae556.jpg)
-
-![linbot-screenshot-rpi-3](https://cloud.githubusercontent.com/assets/12429123/8115734/af5dde9a-107d-11e5-9567-a6b19b674675.jpg)
-
-
-T: Number of profiles the bot tried to access;
-
-V: Number of profiles the bot actually visited (profiles you can access: rank 3 or less);
-
-Q: Number of profiles in queue.
-
-## More
-If you want to know more about this project, check out my [blog post](http://nbyim.com/comment-augmenter-sa-popularite-sur-linkedin) :)
+https://www.jag-conseil.com/
+https://www.jag-conseil.com/contact/
+https://www.jag-conseil.com/politique-de-confidentialite/
+https://www.jag-conseil.com/mentions-legales/	0	2018-12-08 00:11 +01:00
+https://www.jag-conseil.com/prendre-rendez-vous-creation-site-internet/	0	2018-12-10 15:24 +01:00
+https://www.jag-conseil.com/merci/	0	2018-12-11 20:18 +01:00
+https://www.jag-conseil.com/audit-web-gratuit/	0	2018-12-12 01:23 +01:00
+https://www.jag-conseil.com/gestion-de-site-internet/	1	2019-02-20 11:45 +01:00
+https://www.jag-conseil.com/creation-site-internet/	1	2019-02-20 11:46 +01:00
+https://www.jag-conseil.com/referencement-naturel/	1	2019-02-20 12:02 +01:00
+https://www.jag-conseil.com/referencement-payant/	1	2019-02-20 12:20 +01:00
+https://www.jag-conseil.com/nos-solutions-web/	1	2019-02-20 12:57 +01:00
+https://www.jag-conseil.com/solutions-digitales-pour-les-entreprises/	1	2019-03-04 18:04 +01:00
+https://www.jag-conseil.com/votre-site-internet/	0	2019-03-05 08:30 +01:00
+https://www.jag-conseil.com/developpez-votre-rentabilite-et-votre-notoriete/	0	2019-03-05 08:30 +01:00
+https://www.jag-conseil.com/creation-boutique-en-ligne/	1	2019-03-05 11:42 +01:00
+https://www.jag-conseil.com/creation-site-internet-le-croisic/	1	2019-03-06 14:00 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-guerande/	1	2019-03-06 14:01 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-la-turballe/	1	2019-03-06 14:01 +01:00
+https://www.jag-conseil.com/creation-site-internet-pornichet/	1	2019-03-06 14:01 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-saint-andre-des-eaux/	1	2019-03-06 14:02 +01:00
+https://www.jag-conseil.com/creation-site-internet-la-baule-escoublac/	1	2019-03-06 14:02 +01:00
+https://www.jag-conseil.com/creation-site-internet-saint-nazaire/	1	2019-03-06 14:03 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-trignac/	1	2019-03-06 14:05 +01:00
+https://www.jag-conseil.com/partenaires/	0	2019-03-13 18:01 +01:00
+https://www.jag-conseil.com/creation-site-internet-saint-brevins-les-pins/	1	2019-03-14 00:04 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-nantes/	1	2019-03-14 00:06 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-donges/	1	2019-03-14 00:11 +01:00
+https://www.jag-conseil.com/creation-site-internet-montoir-de-bretagne/	1	2019-03-14 00:14 +01:00
+https://www.jag-conseil.com/creation-site-internet-herbignac/	1	2019-03-14 00:16 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-saint-joachim/	1	2019-03-14 00:18 +01:00
+https://www.jag-conseil.com/creation-site-internet-le-pouliguen/	1	2019-03-14 00:22 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-la-plaine-sur-mer-copy/	1	2019-03-14 00:27 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-aubergenville/	1	2019-03-14 00:29 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-saint-molf/	1	2019-03-14 00:31 +01:00
+https://www.jag-conseil.com/creation-site-internet-saint-lyphard/	1	2019-03-14 00:31 +01:00
+https://www.jag-conseil.com/creation-site-internet-saint-michel-chef-chef/	1	2019-03-14 00:31 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-saint-pere-en-retz/	1	2019-03-14 00:32 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-batz-sur-mer/	1	2019-03-14 00:33 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-paimboeuf/	1	2019-03-14 00:34 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-rennes/	1	2019-03-14 00:35 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-vannes-copy/	1	2019-03-14 00:37 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-corsept/	1	2019-03-14 00:37 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-pontchateau-copy/	1	2019-03-14 00:40 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-sainte-reine-de-bretagne/	1	2019-03-14 00:41 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-piriac-sur-mer-copy/	1	2019-03-14 00:43 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-prefailles/	1	2019-03-14 00:43 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-saint-marc/	1	2019-03-14 00:44 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-auray/	1	2019-03-14 00:45 +01:00
+https://www.jag-conseil.com/creation-site-internet-a-besne/
+https://www.jag-conseil.com/blog/	0	2019-03-15 23:21 +01:00
+https://www.jag-conseil.com/blog/pub-digital-media-forte-croissance-du-search-et-des-reseaux-sociaux/	1	2018-03-30 00:10 +02:00
+https://www.jag-conseil.com/blog/pourquoi-avoir-un-site-securise-https-jag-consulting/	2	2018-09-12 12:26 +02:00
+https://www.jag-conseil.com/blog/le-cout-dun-retour-en-arriere/	1	2018-10-17 03:55 +02:00
+https://www.jag-conseil.com/blog/8-raisons-dincorporer-instagram-a-sa-strategie/	1	2018-12-08 01:26 +01:00
+https://www.jag-conseil.com/blog/integrer-video-strategie-marketing-jag/	1	2018-12-08 01:28 +01:00
+https://www.jag-conseil.com/blog/mais-pourquoi-mes-emails-arrivent-en-spam/	1	2018-12-08 01:29 +01:00
+https://www.jag-conseil.com/blog/indexation-optimiser-site-mobile/	1	2018-12-08 01:33 +01:00
+https://www.jag-conseil.com/blog/jag-conseil-jwell-paris18-fr-annonce-la-refonte-de-son-site-internet/	1	2018-12-10 11:27 +01:00
+https://www.jag-conseil.com/blog/quest-ce-que-la-strategie-digitale-jag-conseil/	1	2019-02-22 14:17 +01:00
+https://www.jag-conseil.com/blog/etapes-de-creation-dun-site-internet-jag-consulting/	1	2019-03-11 11:03 +01:00
+https://www.jag-conseil.com/blog/methodes-de-travail-developpeur-web/	1	2019-03-11 14:02 +01:00
+https://www.jag-conseil.com/blog/pages-jaunes-vs-agence-de-referencement/	1	2019-03-13 17:41 +01:00
+https://www.jag-conseil.com/blog/pourquoi-site-responsive-mobile-compliant/	1	2019-03-13 17:42 +01:00
+https://www.jag-conseil.com/blog/boostez-votre-chiffre-daffaires-avec-linbound-marketing/	1	2019-03-13 17:42 +01:00
+https://www.jag-conseil.com/blog/avantages-agence-web-marketing-jag-consulting/	1	2019-03-13 23:00 +01:00
+https://www.jag-conseil.com/blog/les-nouvelles-tendances-du-seo-en-2018/	2	2019-03-13 23:01 +01:00
+https://www.jag-conseil.com/blog/les-15-termes-du-developpement-web-a-connaitre/	1	2019-03-13 23:02 +01:00
+https://www.jag-conseil.com/blog/les-tendances-du-developpement-web/	1	2019-03-13 23:03 +01:00
+https://www.jag-conseil.com/blog/quelles-sont-les-etapes-dune-refonte-dun-site-web/	1	2019-03-13 23:05 +01:00
+https://www.jag-conseil.com/blog/definir-une-strategie-digitale-efficace/	1	2019-03-13 23:06 +01:00
+https://www.jag-conseil.com/blog/penser-out-of-the-box-les-avantages-de-lamelioration-des-processus-existants/	1	2019-03-13 23:07 +01:00
+https://www.jag-conseil.com/blog/planification-maitrise-strategie/	2	2019-03-13 23:07 +01:00
+https://www.jag-conseil.com/blog/quelle-est-la-recette-dun-bon-site-internet/	1	2019-03-13 23:20 +01:00
+https://www.jag-conseil.com/blog/comment-evaluer-lefficacite-dun-site-web/	1	2019-03-14 15:42 +01:00
+https://www.jag-conseil.com/blog/quel-cms-choisir-en-fonction-de-mon-site/	1	2019-03-14 15:44 +01:00
+https://www.jag-conseil.com/blog/cest-quoi-autorite-de-domaine/
